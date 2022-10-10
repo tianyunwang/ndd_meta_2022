@@ -6,7 +6,7 @@ library(ggrepel)
 library(tidyr)
 library(scatterpie)
 
-df_input = read.csv("46621NDD_min_p_q.csv")
+df_input = read.csv("data_for_Figure2a.csv")
 head(df_input)
 
 df_input$MinQraw_log_adj = -log10(df_input$MinQ) 
@@ -99,5 +99,7 @@ ggplot(df, aes(x = xnorm, y = ynorm, label = SNP)) +
   ) +
   guides(color = FALSE, size = FALSE)
 
-ggsave("manhattan_piechart_overFDR.pdf", width = 10*1.309565, height = 10, device='pdf', dpi=700)
+ggsave("Figure2a.pdf", width = 10*1.309565, height = 10, device='pdf', dpi=700)
+
+# downstream editing was done in the Adobe Illustrator
 
