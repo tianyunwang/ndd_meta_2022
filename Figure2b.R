@@ -57,5 +57,5 @@ upset(fromExpression(FWER),
       mainbar.y.label = "# genes"
 )
 
-# edit in Adobe AI for final Figure2b
+# downstream editing was done in the Adobe Illustrator
 
